@@ -1,0 +1,118 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans)}
+.hero{padding:3rem 1.5rem 2rem;text-align:center;border-bottom:0.5px solid var(--color-border-tertiary)}
+.eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-text-secondary);margin-bottom:1rem}
+.hero-title{font-size:42px;font-weight:500;line-height:1.1;color:var(--color-text-primary);margin-bottom:1rem}
+.hero-title span{color:#C1420B}
+.hero-sub{font-size:16px;color:var(--color-text-secondary);line-height:1.7;max-width:560px;margin:0 auto 1.5rem}
+.hero-img{width:100%;max-width:480px;border-radius:var(--border-radius-lg);margin:1.5rem auto 0;display:block;object-fit:cover;aspect-ratio:4/3}
+.cta-bar{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:1.5rem}
+.cta-primary{background:#C1420B;color:#fff;border:none;padding:10px 24px;border-radius:var(--border-radius-md);font-size:14px;font-weight:500;cursor:pointer}
+.cta-secondary{background:transparent;color:var(--color-text-primary);border:0.5px solid var(--color-border-secondary);padding:10px 24px;border-radius:var(--border-radius-md);font-size:14px;cursor:pointer}
+.what-is{padding:2.5rem 1.5rem;max-width:640px;margin:0 auto}
+.section-label{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-secondary);margin-bottom:0.75rem}
+.what-is h2{font-size:22px;font-weight:500;color:var(--color-text-primary);margin-bottom:1rem}
+.what-is p{font-size:15px;line-height:1.75;color:var(--color-text-secondary)}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:1.5rem}
+.pillar{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem;text-align:center}
+.pillar-icon{font-size:22px;margin-bottom:6px;color:#C1420B}
+.pillar p{font-size:13px;color:var(--color-text-secondary);margin:0}
+.stories-section{padding:2rem 1.5rem;border-top:0.5px solid var(--color-border-tertiary)}
+.stories-section h2{font-size:22px;font-weight:500;color:var(--color-text-primary);margin-bottom:0.4rem}
+.stories-section .sub{font-size:14px;color:var(--color-text-secondary);margin-bottom:1.5rem}
+.story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.story-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.1rem;display:flex;flex-direction:column;gap:6px;cursor:pointer;transition:border-color 0.15s}
+.story-card:hover{border-color:#C1420B}
+.story-name{font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.story-title{font-size:12px;color:var(--color-text-secondary);line-height:1.4;flex:1}
+.story-link{font-size:12px;color:#C1420B;text-decoration:none;display:flex;align-items:center;gap:4px;margin-top:4px}
+.story-link:hover{text-decoration:underline}
+.how-section{padding:2.5rem 1.5rem;border-top:0.5px solid var(--color-border-tertiary);background:var(--color-background-secondary)}
+.how-section h2{font-size:22px;font-weight:500;color:var(--color-text-primary);margin-bottom:1.5rem;text-align:center}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem}
+.step{text-align:center;padding:1rem}
+.step-num{font-size:28px;font-weight:500;color:#C1420B;line-height:1}
+.step h3{font-size:14px;font-weight:500;color:var(--color-text-primary);margin:6px 0 4px}
+.step p{font-size:13px;color:var(--color-text-secondary);line-height:1.5}
+.footer-cta{padding:3rem 1.5rem;text-align:center;border-top:0.5px solid var(--color-border-tertiary)}
+.footer-cta h2{font-size:26px;font-weight:500;color:var(--color-text-primary);margin-bottom:0.75rem}
+.footer-cta p{font-size:15px;color:var(--color-text-secondary);margin-bottom:1.5rem}
+.phone-badge{display:inline-flex;align-items:center;gap:8px;background:var(--color-background-secondary);border:0.5px solid var(--color-border-secondary);padding:12px 20px;border-radius:var(--border-radius-md);font-size:15px;font-weight:500;color:var(--color-text-primary)}
+.tag{display:inline-block;font-size:11px;background:#FAE8E0;color:#8B2E05;padding:2px 8px;border-radius:20px;margin-bottom:6px}
+</style>
+
+<h2 class="sr-only" style="position:absolute;left:-9999px">Joyrides with Susy Gordon — a mobile sanctuary offering prayers, hugs, and hope from the front seat</h2>
+
+<div class="hero">
+  <p class="eyebrow">Fort Worth, Texas</p>
+  <h1 class="hero-title">Joy<span>Rides</span><br>with Susy Gordon</h1>
+  <p class="hero-sub">A mobile sanctuary rolling through the streets of Cowtown — delivering prayers, hugs, Baggies of Hope, and real talk from the front seat.</p>
+  <img class="hero-img" src="/mnt/user-data/uploads/IMG_0811.JPEG" alt="Susy Gordon holding a red megaphone, smiling in her car" />
+  <div class="cta-bar">
+    <button class="cta-primary" onclick="document.getElementById('stories').scrollIntoView({behavior:'smooth'})"><i class="ti ti-player-play" aria-hidden="true"></i> Watch a ride</button>
+    <button class="cta-secondary" onclick="document.getElementById('schedule').scrollIntoView({behavior:'smooth'})">Schedule a ride</button>
+  </div>
+</div>
+
+<div class="what-is">
+  <p class="section-label">What is Joyrides?</p>
+  <h2>This is where it all began.</h2>
+  <p>Joyrides is Susy's calling — a passion-driven ministry on wheels. No subscription. No paywall. Just a car, a calling, and whoever God sends through the door. Passengers receive prayers, devotionals, Bibles, and baggies filled with mustard seeds and encouragement. This is a mobile church, a rolling meeting room, a front-seat confessional.</p>
+  <div class="pillars">
+    <div class="pillar"><div class="pillar-icon"><i class="ti ti-heart" aria-hidden="true"></i></div><p>Prayers &amp; hugs</p></div>
+    <div class="pillar"><div class="pillar-icon"><i class="ti ti-package" aria-hidden="true"></i></div><p>Baggies of Hope</p></div>
+    <div class="pillar"><div class="pillar-icon"><i class="ti ti-book" aria-hidden="true"></i></div><p>Devotionals &amp; Bibles</p></div>
+    <div class="pillar"><div class="pillar-icon"><i class="ti ti-microphone" aria-hidden="true"></i></div><p>Real testimonies</p></div>
+  </div>
+</div>
+
+<div class="stories-section" id="stories">
+  <h2>Stories from the front seat</h2>
+  <p class="sub">Real rides. Real people. Real transformation.</p>
+  <div class="story-grid" id="storyGrid"></div>
+</div>
+
+<div class="how-section">
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><h3>Call Susy</h3><p>Schedule a ride by phone — no app, no algorithm. Just a direct line.</p></div>
+    <div class="step"><div class="step-num">2</div><h3>Get in the car</h3><p>Show up as you are. Broken, hopeful, curious, or somewhere in between.</p></div>
+    <div class="step"><div class="step-num">3</div><h3>Leave changed</h3><p>A prayer, a baggie, a Bible — and a story that belongs to you now.</p></div>
+  </div>
+</div>
+
+<div class="footer-cta" id="schedule">
+  <h2>Ready for your ride?</h2>
+  <p>No calendar. No signup. Just call and let God handle the rest.</p>
+  <div class="phone-badge"><i class="ti ti-phone" aria-hidden="true"></i> Call Susy to schedule</div>
+  <p style="font-size:13px;color:var(--color-text-secondary);margin-top:1.5rem">Part of <strong>Mega Mission Media</strong> · Seeker of Story · Fort Worth, TX</p>
+</div>
+
+<script>
+const stories = [
+  {name:"Rodney",title:"Prison Transformation Blueprint",id:"kgTyGsXRcmw",tag:"Faith"},
+  {name:"Cameron",title:"Surviving the Storm: Rebuilding and Refining Self",id:"bQwsbG9G-xI",tag:"Healing"},
+  {name:"Troy, Roman & Shannon",title:"A Band, a Backseat, and God's Glory",id:"4vHj8gaPcUI",tag:"Sobriety"},
+  {name:"Latoya",title:"Moments — Homeless and Homebound",id:"TL3rpHBGipg",tag:"Restoration"},
+  {name:"Jesse & Jeremy",title:"Two Men, Sobriety & a Divine Ride",id:"9A-4cmtnKVA",tag:"Recovery"},
+  {name:"Naldo & Juanita",title:"One Ride. Two Passengers. Three Miracles.",id:"tFCVGelk7Vo",tag:"Testimony"},
+  {name:"Taryn and Team",title:"Adam & Eve — a Lively Backseat Debate",id:"iH0Jh7L6shc",tag:"Faith"},
+  {name:"Ashlan",title:"Breast Cancer Survivor — Faith Over Fear",id:"aHWAQ1VfNJM",tag:"Healing"},
+  {name:"Andrew",title:"Diagnosed, in a Coma — then He Heard God's Voice",id:"-jm3WCRDue4",tag:"Miracle"},
+  {name:"Michael",title:"Caught Between the World and God's Whisper",id:"xK47esFh044",tag:"Surrender"},
+  {name:"Ellie Zuniga",title:"Halo — Born Blessed, Tested to the Brink",id:"0lJ_Csrv31I",tag:"Testimony"},
+  {name:"Lucero",title:"Crisis con Amor y Valentía",id:"OBQwWqqKTgI",tag:"Esperanza"},
+  {name:"Jean Jon",title:"Advice for the Young Generation",id:"MDf1i9lcKts",tag:"Wisdom"},
+  {name:"Ms. June",title:"Former Addict — A Story of Perseverance",id:"1jxc6GcMXkg",tag:"Recovery"},
+  {name:"College Kids",title:"Best Ride Ever — Singing and Praising in the Backseat",id:"bAfa5yG6jas",tag:"Joy"}
+];
+const grid = document.getElementById('storyGrid');
+stories.forEach(s=>{
+  const card = document.createElement('div');
+  card.className = 'story-card';
+  card.innerHTML = `<span class="tag">${s.tag}</span><div class="story-name">${s.name}</div><div class="story-title">${s.title}</div><a class="story-link" href="https://youtu.be/${s.id}" target="_blank"><i class="ti ti-player-play" aria-hidden="true"></i> Watch on YouTube</a>`;
+  grid.appendChild(card);
+});
+</script>
